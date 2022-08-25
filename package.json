@@ -2,13 +2,13 @@
   "name": "npm-vite-package",
   "private": false,
   "version": "0.0.1",
+  "main": "./dist/npm-vite-package.umd.cjs",
+  "module": "./dist/npm-vite-package.js",
   "type": "module",
-  "main": "./dist/npm-vite-package.umd.js",
-  "module": "./dist/npm-vite-package.es.js",
   "exports": {
     ".": {
-      "import": "./dist/npm-vite-package.es.js",
-      "require": "./dist/npm-vite-package.umd.js"
+      "import": "./dist/npm-vite-package.js",
+      "require": "./dist/npm-vite-package.umd.cjs"
     }
   },
   "files": [

@@ -12,7 +12,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
       name: 'NpmTestPackege',
-      fileName: (format) => `npm-vite-package.${format}.js`,
+      fileName: `npm-vite-package`,
       // the proper extensions will be added
     },
     rollupOptions: {
