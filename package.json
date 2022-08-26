@@ -3,11 +3,11 @@
   "private": false,
   "version": "0.1.2",
   "main": "./dist/npm-vite-component.umd.cjs",
-  "module": "./dist/npm-vite-component.es.js",
+  "module": "./dist/npm-vite-component.js",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/npm-vite-component.es.js",
+      "import": "./dist/npm-vite-component.js",
       "require": "./dist/npm-vite-component.umd.cjs"
     }
   },

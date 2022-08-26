@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
       name: 'npm-vite-component',
-      fileName: (format) => `npm-vite-component.${format}.js`,
+      fileName: 'npm-vite-component',
       // the proper extensions will be added
     },
     rollupOptions: {
