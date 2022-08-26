@@ -24,12 +24,10 @@
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
     "vue": "^2.7.0",
-    "vue-tsc": "^0.39.5"
+    "vue-tsc": "^0.39.5",
+    "vite-plugin-vue2": "^2.0.2"
   },
   "peerDependencies": {
     "vue": ">=2.0.0"
-  },
-  "dependencies": {
-    "@vitejs/plugin-vue2": "^1.1.2"
   }
 }
