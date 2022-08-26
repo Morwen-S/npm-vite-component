@@ -4,7 +4,7 @@
 
 ### Установка пакетов
 
-Используем `--force` для установки @vitejs/plugin-vue2 , так как он установится без Vue 2
+Используем `--force`, так как некоторые плагины не смогут установится без Vue 2 в проекте
 
 ```
 npm i --force
@@ -35,11 +35,19 @@ npm i [имя пакета]
 Импорт компонентов в проектах с Vue 2
 
 ```
-import { ComponentName } from 'npm-vite-component';
+import { ComponentName } from '[имя пакета]';
 ```
 
 Импорт компонентов в проектах с Vue 3
 
 ```
-import { ComponentName } from 'npm-vite-component/vue3';
+import { ComponentName } from '[имя пакета]/vue3';
+```
+
+## Разработка
+
+Запуск локального сервиса для разработки. Проект запускается на Vue 3.
+
+```
+npm run build-lib
 ```
