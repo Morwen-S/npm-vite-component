@@ -1,7 +1,7 @@
 {
   "name": "npm-vite-component",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "./vue3/npm-vite-component.umd.cjs",
   "module": "./vue3/npm-vite-component.es.js",
@@ -15,7 +15,10 @@
       "require": "./vue3/npm-vite-component.umd.cjs"
     }
   },
-  "files": ["vue2","vue3"],
+  "files": [
+    "vue2",
+    "vue3"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
