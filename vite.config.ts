@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
-import { createVuePlugin } from 'vite-plugin-vue2'
+import vue from '@vitejs/plugin-vue2'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [createVuePlugin()],
+  plugins: [vue()],
   build: {
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
