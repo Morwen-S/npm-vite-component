@@ -1,7 +1,7 @@
 {
   "name": "npm-vite-component",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./dist/npm-vite-component.umd.cjs",
   "module": "./dist/npm-vite-component.es.js",
   "type": "module",
