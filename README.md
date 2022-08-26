@@ -35,7 +35,7 @@ npm i [имя пакета]
 Импорт компонентов в проектах с Vue 2
 
 ```
-import { ComponentName } from 'npm-vite-component/vue2';
+import { ComponentName } from 'npm-vite-component';
 ```
 
 Импорт компонентов в проектах с Vue 3
