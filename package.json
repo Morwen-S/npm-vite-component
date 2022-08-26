@@ -21,13 +21,15 @@
   },
   "devDependencies": {
     "@types/node": "^18.7.13",
-    "@vitejs/plugin-vue": "^3.0.3",
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
-    "vue": "^3.2.16",
+    "vue": "^2.7.0",
     "vue-tsc": "^0.39.5"
   },
   "peerDependencies": {
     "vue": ">=2.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue2": "^1.1.2"
   }
 }
