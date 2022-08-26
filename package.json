@@ -2,32 +2,45 @@
   "name": "npm-vite-component",
   "private": false,
   "version": "0.1.7",
-  "main": "./dist/npm-vite-component.umd.cjs",
-  "module": "./dist/npm-vite-component.js",
   "type": "module",
+  "main": "./vue3/npm-vite-component.umd.cjs",
+  "module": "./vue3/npm-vite-component.es.js",
   "exports": {
-    ".": {
-      "import": "./dist/npm-vite-component.js",
-      "require": "./dist/npm-vite-component.umd.cjs"
+    "./vue2": {
+      "import": "./vue2/npm-vite-component.es.js",
+      "require": "./vue2/npm-vite-component.umd.cjs"
+    },
+    "./vue3": {
+      "import": "./vue3/npm-vite-component.es.js",
+      "require": "./vue3/npm-vite-component.umd.cjs"
     }
   },
   "files": [
-    "dist"
+    "vue2",
+    "vue3"
   ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "build-v2": "npm install vue@^2.0.0 --save && vite build --mode v2",
+    "build-v3": "npm install vue@^3.0.0 --save && vite build --mode v3",
+    "build-lib": "npm run build-v2 && npm run build-v3"
   },
   "devDependencies": {
     "@types/node": "^18.7.13",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vitejs/plugin-vue2": "^1.1.2",
+    "cross-env": "^7.0.3",
     "typescript": "^4.6.4",
-    "vite": "^3.0.7",
-    "vue": "^2.6.0",
-    "vue-tsc": "^0.39.5",
-    "@vitejs/plugin-vue2": "^1.1.2"
+    "vite": "^3.0.9",
+    "vue": "^3.2.37",
+    "vue-tsc": "^0.39.5"
   },
   "peerDependencies": {
     "vue": ">=2.0.0"
+  },
+  "dependencies": {
+    "build": "^0.1.4",
+    "v3": "^0.0.0"
   }
 }
