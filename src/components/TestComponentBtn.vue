@@ -5,11 +5,9 @@
         </slot>
     </button>
 </template>
-<script lang="ts">
-import Vue from "vue";
+<script>
 
-
-export default Vue.extend({
+export default {
     name: "TestComponentBtn",
     data: () => ({
         count: 1
@@ -19,7 +17,7 @@ export default Vue.extend({
             this.count++;
         }
     }
-})
+}
 
 </script>
 
