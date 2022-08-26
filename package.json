@@ -22,8 +22,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "build-v2": "npm install vue@^2.0.0 --save && vite build --mode v2",
-    "build-v3": "npm install vue@^3.0.0 --save && vite build --mode v3",
+    "build-v2": "npm install -d vue@^2.0.0 && vite build --mode v2",
+    "build-v3": "npm install -d vue@^3.0.0 && vite build --mode v3",
     "build-lib": "npm run build-v2 && npm run build-v3"
   },
   "devDependencies": {
@@ -38,9 +38,5 @@
   },
   "peerDependencies": {
     "vue": ">=2.0.0"
-  },
-  "dependencies": {
-    "build": "^0.1.4",
-    "v3": "^0.0.0"
   }
 }
