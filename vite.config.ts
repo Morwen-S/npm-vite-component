@@ -9,13 +9,11 @@ export default ({ mode }) => {
 
   const VUE_VERSION = process.env.VITE_VUE_VERSIONS;
 
-  console.log(mode, VUE_VERSION);
-
   const vuePlugin = VUE_VERSION === '2' ? vue2 : vue3;
   const outDir = VUE_VERSION === '2' ? 'vue2' : 'vue3';
-
-  // import.meta.env.VITE_NAME available here with: process.env.VITE_NAME
-  // import.meta.env.VITE_PORT available here with: process.env.VITE_PORT
+  const fileName = VUE_VERSION === '2'
+    ? 'npm-vite-component'
+    : (format) => `npm-vite-component.${format}.js`;
 
   return defineConfig({
     plugins: [vuePlugin()],
@@ -24,7 +22,7 @@ export default ({ mode }) => {
       lib: {
         entry: resolve(__dirname, 'src/main.ts'),
         name: 'npm-vite-component',
-        fileName: (format) => `npm-vite-component.${format}.js`,
+        fileName: fileName,
       },
       rollupOptions: {
         external: ['vue'],
