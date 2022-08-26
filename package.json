@@ -1,14 +1,14 @@
 {
-  "name": "npm-vite-package",
+  "name": "npm-vite-component",
   "private": false,
   "version": "0.0.2",
-  "main": "./dist/npm-vite-package.umd.cjs",
-  "module": "./dist/npm-vite-package.js",
+  "main": "./dist/npm-vite-component.umd.cjs",
+  "module": "./dist/npm-vite-component.js",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/npm-vite-package.js",
-      "require": "./dist/npm-vite-package.umd.cjs"
+      "import": "./dist/npm-vite-component.js",
+      "require": "./dist/npm-vite-component.umd.cjs"
     }
   },
   "files": [
@@ -31,12 +31,6 @@
     "vue-tsc": "^0.39.5"
   },
   "peerDependencies": {
-    "@vue/composition-api": "^1.0.0-rc.1",
-    "vue": "^2.0.0 || >=3.0.0"
-  },
-  "peerDependenciesMeta": {
-    "@vue/composition-api": {
-      "optional": true
-    }
+    "vue": ">=3.0.0"
   }
 }
