@@ -3,10 +3,10 @@
   "private": false,
   "version": "1.0.2",
   "type": "module",
-  "main": "./vue3/npm-vite-component.umd.cjs",
-  "module": "./vue3/npm-vite-component.es.js",
+  "main": "./vue2/npm-vite-component.umd.cjs",
+  "module": "./vue2/npm-vite-component.es.js",
   "exports": {
-    "./vue2": {
+    ".": {
       "import": "./vue2/npm-vite-component.js",
       "require": "./vue2/npm-vite-component.umd.cjs"
     },
